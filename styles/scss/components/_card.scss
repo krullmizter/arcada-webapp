@@ -1,0 +1,131 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    box-shadow: $border-shadow;
+    position: absolute;
+    background-color: $white;
+
+    &-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    
+    &__title {
+        margin-bottom: 1rem;
+
+        & h5 {
+            margin-bottom: 0;
+        }
+
+        &--age {
+            font-weight: 600;
+        }
+
+        &--about {
+            margin-top: 5px;
+        }
+    }
+
+    &__info {
+
+        & a {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            transition: .2s;
+
+            &::before {
+                display: flex;
+                justify-content: center;
+                width: 1rem;
+            }
+
+            &:hover::before {
+                color: $dark-pink;
+            }
+        }
+
+        &--email::before {
+            @include fontAwesome("\f1fa", $pink, 1.5rem);
+        }
+
+        &--postal::before {
+            @include fontAwesome("\f3c5", $pink, 1.5rem);
+        }
+
+        &--salary::before {
+            @include fontAwesome("\f155", $pink, 1.5rem);
+        }
+
+        &--seeking::before {
+            @include fontAwesome("\f584", $pink, 1.5rem);
+        }
+    }
+
+    &,
+    &__map {
+        border-radius: 5px;
+    }
+
+    &__map {
+        min-width: 20rem;
+        min-height: 15rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+
+        &--like::before {
+            @include fontAwesome("\f004", $pink, 3rem);
+        }
+
+        &--dislike::before {
+            @include fontAwesome("\f7a9", $pink, 3rem);
+        }
+
+        &--like,
+        &--dislike {
+            padding: 1.85rem;
+            border: 1px solid lightgrey;
+            border-radius: 50%;
+            box-shadow: 0 2.5px 0 .8px lightgray;
+            cursor: pointer;
+            transition: .2s;
+
+            @media screen and (max-width: 768px) {
+                padding: 1.35rem;
+            }
+
+            &:hover {
+                position: relative; 
+                transform: translate(0, 3px);
+                box-shadow: 0 1.85px 0 0 lightgray;
+            }
+
+            &::before {
+                position: relative;
+                top: 2.5px;
+            }
+        }
+    }
+
+    &__poi p {
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+
+    &__map,
+    &__info,
+    &__poi {
+        margin: 1rem 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 5px 0;
+        } 
+    }
+}

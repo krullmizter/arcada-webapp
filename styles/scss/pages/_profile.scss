@@ -1,0 +1,12 @@
+.profile {
+
+    padding-top: 5%;
+    
+    h3 {
+        margin: 0;
+    }
+    
+    table::before {
+        @include fontAwesome("\f4ff", $black, 2rem);
+    }
+}

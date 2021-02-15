@@ -1,0 +1,11 @@
+@mixin fontAwesome($fontAwesomeIcon, $fontColor: inherit, $fontSize: inherit, $fontWeight: 900) {
+   content: $fontAwesomeIcon;
+   font-family: "Font Awesome 5 Free";
+   font-weight: $fontWeight;
+   font-size: $fontSize;
+   color: $fontColor;
+
+   @media screen and (max-width: 768px) {
+      font-size: $fontSize / $fontSize;
+   }
+}
