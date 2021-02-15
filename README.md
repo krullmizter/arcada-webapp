@@ -13,9 +13,9 @@ A fake dating web app, written in PHP by me Samuel 👋 for my second year [Arca
 * Google Fonts
 
 #### Tasks
-1. Create users and posts.
-2. Shuffle through posts.
-3. Create profile.
-4. Currency exchange API.
-5. OpenStreetMaps API.
-6. OpenStreetMaps common meeting points.
+* Create users and posts.
+* Shuffle through posts.
+* Create profile.
+* Currency exchange API.
+* OpenStreetMaps API.
+* OpenStreetMaps common meeting points.
