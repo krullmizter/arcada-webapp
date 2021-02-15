@@ -1,6 +1,6 @@
 ### Fake Date app
 
-A PHP fake dating web app project by me Samuel 👋 for my first year [Arcada](https://www.arcada.fi/en) web app course assignment.
+A fake dating web app, written in PHP by me Samuel 👋 for my first year [Arcada](https://www.arcada.fi/en) web application course assignment.
 
 #### What's used
 
