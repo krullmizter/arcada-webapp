@@ -1,4 +1,4 @@
-### University Course | PHP Dating web app
+### University Course | PHP web app assigment
 
 A fake dating web app, written in PHP by me Samuel 👋 for my second year [Arcada](https://www.arcada.fi/en) web application course assignment.
 
